@@ -524,8 +524,8 @@ function whereToMove(xpos, ypos, currentDir)
 	xpos = (xpos + TILE_W/2) / TILE_W;
 	ypos = (ypos + TILE_H/2) / TILE_H;
 
-	var xnewpos = Math.floor(xpos);
-	var ynewpos = Math.floor(ypos);
+	var xnewpos = Math.floor(xpos) + (TILE_W/2);
+	var ynewpos = Math.floor(ypos) + (TILE_H/2);
 
 	// test out some possible move locations
 	switch(currentDir)
