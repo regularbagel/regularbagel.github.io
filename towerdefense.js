@@ -454,8 +454,8 @@ function startwave(evt)
 							break;
 					}
 					minions[i].style.display = "block";	
-					minions[i].style.top = movey[i] + "px";	
-					minions[i].style.left = movex[i] + "px";
+					minions[i].style.top = (movey[i] + (TILE_H/2)) + "px";	
+					minions[i].style.left = (movex[i] +  + (TILE_W/2)) "px";
 
 					// are there any turrets in range?
 					var damage = anyTurretsInRange(minions[i],movex[i],movey[i]);
@@ -524,8 +524,8 @@ function whereToMove(xpos, ypos, currentDir)
 	xpos = (xpos + TILE_W/2) / TILE_W;
 	ypos = (ypos + TILE_H/2) / TILE_H;
 
-	var xnewpos = Math.floor(xpos) + (TILE_W/2);
-	var ynewpos = Math.floor(ypos) + (TILE_H/2);
+	var xnewpos = Math.floor(xpos);
+	var ynewpos = Math.floor(ypos);
 
 	// test out some possible move locations
 	switch(currentDir)
