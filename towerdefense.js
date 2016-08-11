@@ -455,7 +455,7 @@ function startwave(evt)
 					}
 					minions[i].style.display = "block";	
 					minions[i].style.top = (movey[i] + (TILE_H/2)) + "px";	
-					minions[i].style.left = (movex[i] +  + (TILE_W/2)) "px";
+					minions[i].style.left = (movex[i] + (TILE_W/2)) + "px";
 
 					// are there any turrets in range?
 					var damage = anyTurretsInRange(minions[i],movex[i],movey[i]);
